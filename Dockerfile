@@ -2,7 +2,7 @@ FROM resin/rpi-raspbian:stretch
 MAINTAINER Aaron Guhl
 
 # Install dependencies
-RUN apt-get update && apt-get upgrade -y && \
+RUN apt-get update && \
 	apt-get -y install \
 	build-essential \
 	zlib1g \
@@ -29,9 +29,8 @@ RUN apt-get update && apt-get upgrade -y && \
 	libapr1 \
 	libaprutil1 \
 	libsvn1 \
-	libpcap-dev
-
-RUN apt-get -y install git-core \
+	libpcap-dev \
+	git-core \
 	postgresql \
 	ruby \
 	ruby-dev \
