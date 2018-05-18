@@ -31,7 +31,6 @@ RUN apt-get update && \
 	libsvn1 \
 	libpcap-dev \
 	git-core \
-	postgresql \
 	ruby \
 	ruby-dev \
 	sqlite3 \
